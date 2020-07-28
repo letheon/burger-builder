@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import Button from '../../UI/Button/Button';
 
-const orderSummary = props => {
+const OrderSummary = (props) => {
+
   const ingredientSummary = Object.keys(props.ingredients).map((key) => {
     return (
       <li key={key}>
@@ -9,6 +10,10 @@ const orderSummary = props => {
       </li>
     );
   });
+  
+  useEffect(() => {
+    console.log('order summary rendered');
+  }, []);
 
   return (
     <Fragment>
@@ -25,4 +30,4 @@ const orderSummary = props => {
   );
 }
 
-export default orderSummary;
+export default OrderSummary;
