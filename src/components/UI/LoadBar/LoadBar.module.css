@@ -1,0 +1,17 @@
+.LoadBar {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  min-height: 2px;
+  height: 2px;
+  transition: all 600ms ease-in-out;
+  box-shadow: 2px 0 2px 1px #fad6d657;
+  background-color: #fcff3e;
+}
+
+.Finished {
+  transition: all 2s ease;
+  opacity: 0;
+}
